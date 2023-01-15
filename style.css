@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
+}
+
+.div_relogio {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 30vh;
+    gap: 6.3333%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.767);
+}
+
+.div_horas, .div_minutos, .div_segundos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 27%;
+    height: 85%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#horas, #minutos, #segundos {
+    font-size: 75px;
+}
+
+.legenda {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+
+    .div_relogio {
+        flex-direction: column;
+        width: 50vw;
+        height: 90vh;
+    }
+    
+    .div_horas, .div_minutos, .div_segundos {
+        width: 80%;
+        height: 27%;
+    }
+
+}
